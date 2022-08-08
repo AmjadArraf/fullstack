@@ -1,14 +1,15 @@
-import {testFunction, addToHtml} from "./appendage-functions.js"
+import {testFunction, addToHtml, clearCounter} from "./appendage-functions.js"
 import { stores } from "./stores.js";
 
 const testButton2 = document.querySelector('#testButton2');
 const postSyncByXHR = document.querySelector('#postSyncByXHR');
 const postAsyncByXHR = document.querySelector('#postAsyncByXHR');
+const clearTestCounter2 = document.querySelector('#clearTest2') 
 
 testButton2.addEventListener('click', testFunction)
 postSyncByXHR.addEventListener('click', postDataSync)
 postAsyncByXHR.addEventListener('click', postDataaSync)
-
+clearTestCounter2.addEventListener('click', clearCounter)
 
 function postDataSync() {
     const xhr = new XMLHttpRequest();

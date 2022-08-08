@@ -13,6 +13,16 @@ function addToHtml(stores) {
 
 function testFunction() {
     console.log("This is a test function!!!")
+    const testCounter = document.querySelector("#testCounter")
+    const i = parseInt(testCounter.innerText) ? parseInt(testCounter.innerText) : 0
+    testCounter.innerHTML = i+1
+}
+
+// clear the test button counter=================================================================================
+
+function clearCounter() {
+  const testCounter = document.querySelector("#testCounter")
+  testCounter.innerHTML = ""
 }
 
 // create list and add to HTML for XHR Callback==================================================================
@@ -94,4 +104,4 @@ function createListForAjaxAndFetch(stores, departments, produce) {
     return productsArray
   }
 
-export {addToHtml, testFunction, createStoreList, createListForAjaxAndFetch}
+export {addToHtml, testFunction, clearCounter, createStoreList, createListForAjaxAndFetch}
