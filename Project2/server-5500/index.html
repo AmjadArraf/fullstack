@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Server 5500</title>
+</head>
+<body>
+    <div class="split left">
+    <h2>GET</h2>
+    <h3>XHR</h3>
+    <button id="syncByXHR">Sync by XHR</button>
+    <button id="asyncByXHR">Async by XHR</button>
+    <button id="testButton1">Test Button 1</button>
+    <h3>Ajax</h3>
+    <button id="syncByAjax">Sync by Ajax</button>
+    <button id="asyncByAjax">Async by Ajax</button>
+    <ul id="stores"></ul>
+    <h2>POST</h2>
+    <h3>XHR</h3>
+    <button id="postSyncByXHR">Post Sync by XHR</button>
+    <button id="postAsyncByXHR">Post Async by XHR</button>
+    <button id="testButton2">Test Button 2</button>
+    <h3>Ajax</h3>
+    <button id="postSyncByAjax">Post Sync by Ajax</button>
+    <button id="postAsyncByAjax">Post Async by Ajax</button>
+    <h2>Callback</h2>
+    <button id="callback">Get</button>
+    <ul id="callbackList"></ul>
+    <h2>Promise + Ajax</h2>
+    <button id="promiseAjax">Get</button>
+    <ul id="promiseList"></ul>
+    <h2>Async Await + Fetch</h2>
+    <button id="asyncAwaitFetch">Get</button>
+    </div>
+
+    <div class="split right">
+        <p id="note"><b>Note:</b> Store names are in <b>black</b>, deapartments are in <span class="red">red</span> and product names are in <span class="green">green</span></p>
+        <p>=============================================================</p>
+        <div id="storeList"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="module" src="./xhr-get.js"></script>
+    <script type="module" src="./ajax-get.js"></script>
+    <script type="module" src="./xhr-post.js"></script>
+    <script type="module" src="./ajax-post.js"></script>
+    <script type="module" src="./callback-xhr.js"></script>
+    <script type="module" src="./promise-ajax.js"></script>
+    <script type="module" src="./async-await-fetch.js"></script>
+</body>
+</html>
