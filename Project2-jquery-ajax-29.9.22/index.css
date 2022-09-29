@@ -1,0 +1,103 @@
+#cryptoniteImage {
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+h1 {
+    display: inline-block;
+    padding-top: 100px;
+    margin-left: 20px;
+    color: white;
+    font-family: Georgia, serif;
+}
+
+h2{
+  text-align: center;
+}
+
+h3{
+color: white;
+font-family: Georgia, serif;
+}
+
+#upDiv {
+    height: 220px;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    gap: 5px;
+    grid-template-columns:  repeat(3, 400px);
+  }
+
+  .button {
+    width: 150px;
+  }
+
+  .padding-20 {
+    padding: 20px;
+  }
+
+  .card {
+    width: 25vw;
+    margin-bottom: 20px;
+    border: #16425D solid 5px;
+    border-radius: 30px;
+  }
+  .card-body {
+    width: 21.5vw;
+    background-color: #16425D;
+  }
+
+  #upDiv {
+    margin-bottom: 20px;
+  }
+
+#btnDiv{
+  margin-bottom: 20px;
+}
+
+#bodyDiv{
+  background-image: url(images/cryptocurrency.jpg);
+  /* background-size: cover; */
+  min-height: 100vh;
+  /* background-attachment: fixed; */
+}
+
+label{
+  color: white;
+}
+
+*{
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.searchab{
+  float: right;
+}
+
+#siteSearch{
+  border-radius: 5px;
+  height: 30px;
+}
+
+#aboutInfo{
+  background-color: black;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.bg-black{
+  background-color: #16425D;
+  padding: 20px;
+}
+
+.wt{
+  color: white;
+}
+
